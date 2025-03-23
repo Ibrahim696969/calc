@@ -8,7 +8,8 @@
 
 import Foundation
 
-var args = ProcessInfo.processInfo.arguments
-args.removeFirst() // remove the name of the program
+let args = CommandLine.arguments.dropFirst()
 
-print(Int(args[0])!)
+let calc = Calculator()
+let result = calc.calculate(args: Array(args))
+print(result)
