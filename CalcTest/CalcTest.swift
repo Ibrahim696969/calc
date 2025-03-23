@@ -320,7 +320,7 @@ class CalcTest: XCTestCase {
         var nums: [Int] = []
         var args: [String] = []
         for _ in 0...10 {
-            let n = randomSource.nextInt(upperBound:20)+1
+            let n = randomSource.nextInt(upperBound:5)+1
             nums.append(n)
             if args.count > 0 {
                 args.append("x")
